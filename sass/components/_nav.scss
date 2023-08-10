@@ -1,0 +1,35 @@
+/* Navigation Components */
+.nav {
+    width: 100%;
+    z-index: 112;
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7px 20px;
+        border-radius: $border-radius;
+        transition: all ease 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background: #c4c4c425;
+        }
+    }
+
+    &__link {
+        color: inherit;
+    }
+
+    &--light {
+        color: #000;
+    }
+
+    &--dark {
+        color: #fff;
+    }
+}

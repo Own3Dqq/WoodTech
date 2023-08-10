@@ -1,0 +1,128 @@
+/* swiper */
+
+.hero__swiper {
+    position: relative;
+    z-index: 4;
+
+    /* Hero Content */
+    .hero__content {
+        font-family: 'Raleway';
+        color: #fff;
+        height: calc(100vh - 120px - 90px);
+        display: flex;
+        align-items: center;
+
+        @media (min-width: 320px) and (max-width: 768px) {
+        }
+
+        .hero__title {
+            font-size: 58px;
+            font-weight: 300;
+            margin-bottom: 15px;
+
+            @media (min-width: 320px) and (max-width: 576px) {
+                font-size: 40px;
+            }
+        }
+        .hero__text {
+            display: inline-block;
+            padding: 7px 16px;
+            margin-bottom: 25px;
+            background: $accent;
+            border-radius: $border-radius;
+        }
+        .hero__paragraph {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 170%; /* 23.8px */
+            max-width: 420px;
+            padding: 15px 22px;
+            border-radius: 0px 10px;
+            background: rgba(32, 35, 40, 0.9);
+        }
+    }
+}
+
+/* Control */
+//swiper__control
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    width: 430px;
+    max-height: 90px;
+    border-radius: 10px 0 0 0;
+    background: $dark;
+    padding: 37px 37px 28px 37px;
+    z-index: 4;
+
+    @media (min-width: 320px) and (max-width: 768px) {
+        width: 100%;
+    }
+
+    &__numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 58px;
+        height: 28px;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+
+        .counter {
+            font-size: 15px;
+            font-weight: 300;
+            color: #818b9d;
+        }
+
+        .devide {
+            border-right: 2px solid #353941;
+            height: 100%;
+        }
+
+        .total {
+            color: #59606c;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+
+    &__switchers {
+        position: relative;
+        display: flex;
+        height: 5px;
+        width: 180px;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.25);
+
+        @media (min-width: 0px) and (max-width: 575px) {
+            display: none;
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            width: 70%;
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        justify-content: space-between;
+        width: 50px;
+        color: #fff;
+        font-size: 20px;
+
+        button {
+            color: #59606c;
+            &:hover {
+                color: #818b9d;
+                opacity: 0.4;
+                transition: 0.2s ease all;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+/* Social */
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    z-index: 113;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 15px;
+        gap: 12px;
+        width: 135px;
+        height: 35px;
+        padding: 5px 5px;
+        background: #c4c4c425;
+        border-radius: 70px;
+        z-index: 114;
+    }
+
+    &__item {
+        display: flex;
+        color: #ffffffbf;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: inherit;
+
+        &:hover {
+            color: $accent;
+            // transition: $hovermovie;
+        }
+    }
+
+    &--dark {
+        color: #fff;
+    }
+
+    &--light {
+        color: #000;
+    }
+}

@@ -1,0 +1,45 @@
+/* Logo */
+.logo {
+    position: relative;
+    display: inline-flex;
+    width: 122px;
+    cursor: pointer;
+    z-index: 111;
+
+    &__square {
+        position: relative;
+        min-width: 15px;
+        min-height: 15px;
+        max-width: 16px;
+        max-height: 16px;
+        margin-right: 10px;
+        letter-spacing: 0.1em;
+        border: 2px solid $accent;
+        border-radius: 0 5px 0 5px;
+    }
+
+    &__inner {
+        line-height: 1.2;
+    }
+
+    &__title {
+        color: inherit;
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 0.8;
+    }
+
+    &__subtitle {
+        color: inherit;
+        opacity: 0.45;
+    }
+
+    &--dark {
+        color: #fff;
+    }
+
+    &--light {
+        color: #000;
+    }
+}
