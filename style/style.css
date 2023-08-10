@@ -6,6 +6,7 @@ html {
 body {
   background-color: #fff;
   overflow-x: hidden;
+  line-height: 170%;
 }
 
 p {
@@ -397,9 +398,7 @@ button {
   opacity: 0.4;
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
-}
-
-/* Hero Section End */
+} /* Hero Section End */
 /* Trust Section */
 .trust {
   background: #171a1a;
@@ -1145,9 +1144,8 @@ span .footer__spans:nth-child(0) {
   border-bottom: 3px solid #f88500;
 }
 .footer__paragraph {
-  font-size: 13px;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.7);
-  line-height: 1.7;
 }
 .footer__nav {
   display: -webkit-box;
@@ -1181,6 +1179,15 @@ span .footer__spans:nth-child(0) {
 .footer-nav__item a:hover {
   color: #f88500;
   text-decoration: underline;
+}
+.footer__works {
+  padding: 2rem 0;
+}
+.footer-works__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0.5rem;
 }
 .footer-works__item {
   padding: 5px 0;

@@ -20,6 +20,7 @@ html {
 body {
     background-color: #fff;
     overflow-x: hidden;
+    line-height: 170%;
 }
 
 p {
@@ -806,9 +807,8 @@ button {
     }
 
     &__paragraph {
-        font-size: 13px;
+        font-size: 1rem;
         color: rgba(255, 255, 255, 0.7);
-        line-height: 1.7;
     }
 
     &__nav {
@@ -836,8 +836,15 @@ button {
     }
 
     &__works {
+        padding: 2rem 0;
     }
 
+    &-works__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0.5rem;
+    }
     &-works__item {
         padding: 5px 0;
         a {
