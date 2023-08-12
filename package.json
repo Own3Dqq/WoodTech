@@ -9,6 +9,18 @@
         "build": "webpack --node-env=production",
         "clear": "rd /s /q dist"
     },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
     "author": "Own3Dqq",
     "license": "ISC",
     "devDependencies": {
