@@ -48,3 +48,34 @@ const heroSwiper = new Swiper('.hero__swiper', {
         hide: false,
     },
 });
+
+const blogSwiper = new Swiper('.blog__swiper', {
+    modules: [Navigation, Pagination],
+    speed: 300,
+    slidesPerView: 1,
+    spaceBetween: 40,
+    grabCursor: true,
+    watchSlidesProgress: true,
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerGroup: 3,
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+});
