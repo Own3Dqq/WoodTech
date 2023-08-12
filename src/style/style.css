@@ -33,6 +33,11 @@ button {
   background: none;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 .dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +403,9 @@ button {
   opacity: 0.4;
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
-} /* Hero Section End */
+}
+
+/* Hero Section End */
 /* Trust Section */
 .trust {
   background: #171a1a;
@@ -845,7 +852,6 @@ button {
   color: #fff;
   min-height: 380px;
   padding: 4rem 0;
-  background: url("/assets/images/image/partners/bg-image.png") no-repeat top/cover;
 }
 .partners::before {
   content: "";

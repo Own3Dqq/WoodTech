@@ -1,17 +1,17 @@
 @import './components/variable';
 
-$accent: #f88500;
-$text: #333333;
-$text-light: #999999;
-$dark: #202328;
-$deep: #171a1a;
-$dark-header: #6f7a8b;
-$light-bg: #fafafa;
-$dark-div: #2d3038;
-$light-div: #e7e7e8;
-$light-disabled: #e4e6e8;
-$border-radius: 0px 5px;
-$control-accent: #818b9d;
+// $accent: #f88500;
+// $text: #333333;
+// $text-light: #999999;
+// $dark: #202328;
+// $deep: #171a1a;
+// $dark-header: #6f7a8b;
+// $light-bg: #fafafa;
+// $dark-div: #2d3038;
+// $light-div: #e7e7e8;
+// $light-disabled: #e4e6e8;
+// $border-radius: 0px 5px;
+// $control-accent: #818b9d;
 
 html {
     font-size: 16px;
@@ -163,8 +163,8 @@ button {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
-            grid-column-gap: 20px;
-            grid-row-gap: 20px;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
 
             @media (min-width: 320px) and (max-width: 575px) {
                 display: grid;
@@ -539,7 +539,7 @@ button {
     color: #fff;
     min-height: 380px;
     padding: 4rem 0;
-    background: url('/assets/images/image/partners/bg-image.png') no-repeat top / cover;
+    // background: url('../assets/images/image/partners/bg-image.png') no-repeat top / cover;
     &::before {
         content: '';
         position: absolute;

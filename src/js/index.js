@@ -1,3 +1,54 @@
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import { Navigation, Pagination, Scrollbar, EffectFade } from 'swiper/modules';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+const swiper = new Swiper('.hero__swiper', {
+    modules: [Navigation, Pagination, Scrollbar, EffectFade],
+    speed: 300,
+    // effect: '',
+    // fadeEffect: {
+    //     crossFade: true,
+    // },
+    slidesPerView: 1,
+
+    // If we need pagination
+    pagination: {
+        el: '.control__numbers',
+        type: 'custom',
+        clickable: true,
+
+        renderCustom: function (swiper, current, total) {
+            return (
+                '<span class="counter">' +
+                current +
+                '</span>' +
+                '<span class="devide">|</span> ' +
+                '<span class="total">' +
+                total +
+                '</span>'
+            );
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.control__next',
+        prevEl: '.control__prev',
+    },
+
+    // Scrollbar
+    scrollbar: {
+        el: '.control__scrollbar',
+        dragSize: '60',
+        dragClass: 'control__scrollbar-drag',
+        hide: false,
+    },
+});
+
 // /* Slick slider (Hero) */
 // $(document).ready(function () {
 //     $('.hero-slider__list').slick({

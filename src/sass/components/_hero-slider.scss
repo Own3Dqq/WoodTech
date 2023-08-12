@@ -92,14 +92,13 @@
         }
     }
 
-    &__switchers {
+    &__scrollbar {
         position: relative;
         display: flex;
         height: 5px;
         width: 180px;
         border-radius: 5px;
-        background: rgba(0, 0, 0, 0.25);
-
+        background: $deep;
         @media (min-width: 0px) and (max-width: 575px) {
             display: none;
         }
@@ -107,21 +106,27 @@
         @media (min-width: 576px) and (max-width: 768px) {
             width: 70%;
         }
+
+        .control__scrollbar-drag {
+            height: 5px;
+            background: #000;
+            border-radius: 5px;
+        }
     }
 
     &__arrows {
         display: flex;
         justify-content: space-between;
         width: 50px;
-        color: #fff;
         font-size: 20px;
 
         button {
             color: #59606c;
+            cursor: pointer;
+            z-index: 120;
             &:hover {
-                color: #818b9d;
-                opacity: 0.4;
-                transition: 0.2s ease all;
+                color: $control-accent;
+                transition: 0.3s ease all;
             }
         }
     }
