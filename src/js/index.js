@@ -1,11 +1,11 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar, EffectFade } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const heroSwiper = new Swiper('.hero__swiper', {
-    modules: [Navigation, Pagination, Scrollbar, EffectFade],
+    modules: [Navigation, Pagination, Scrollbar],
     speed: 300,
     spaceBetween: 40,
     effect: 'flip',
@@ -51,11 +51,16 @@ const heroSwiper = new Swiper('.hero__swiper', {
 
 const blogSwiper = new Swiper('.blog__swiper', {
     modules: [Navigation, Pagination],
+    effect: 'flip',
+    flipEffect: {
+        slideShadows: false,
+    },
+    cssMode: true,
+    slidesPerView: 3,
     speed: 300,
-    slidesPerView: 1,
     spaceBetween: 40,
     grabCursor: true,
-    watchSlidesProgress: true,
+    maxBackfaceHiddenSlides: 0,
 
     breakpoints: {
         320: {
@@ -67,7 +72,7 @@ const blogSwiper = new Swiper('.blog__swiper', {
             spaceBetween: 30,
         },
         768: {
-            slidesPerGroup: 3,
+            // slidesPerGroup: 1,
             slidesPerView: 3,
             spaceBetween: 30,
         },

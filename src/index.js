@@ -1,4 +1,8 @@
 import './index.html';
+/* Pages */
+import '../static/projects.html';
+
+/* JS */
 import './js/index';
 /* Plagins */
 import 'animate.css';
